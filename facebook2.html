@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook - Login or Sign Up</title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 350px;
+      margin: 80px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1877f2;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #165ecb;
+    }
+
+    .create {
+      margin-top: 15px;
+      text-align: center;
+      padding: 10px;
+      background-color: #42b72a;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .forgot {
+      text-align: center;
+      margin-top: 10px;
+      color: #1877f2;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+    <center>
+        <h1><span style="color:blue">Facebook</span></h1>
+        <hr width="50%">
+
+        <!-- Registration Form -->
+        <h2>Create a new account</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="firstname" required></td>
+                </tr>
+                <tr>
+                    <td>sur Name:</td>
+                    <td><input type="text" name="surname" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>New Password:</td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Sign Up">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <hr width="50%">
+
+        <!-- Login Form -->
+        <h2>Log In</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>Email or Phone:</td>
+                    <td><input type="email" name="login_email" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="login_password" required></td>
+                </tr>
+                <tr>
+                    <td  align="center">
+                        <input type="submit" value="Log In">
+                    </td>
+                </tr>
+            </table>
+        </form>
+         <h3>Continue with</h3>
+
+  <!-- Social Login Icons -->
+  <a href="https://accounts.google.com" target="_blank">
+    <img src="https://www.google.com/favicon.ico" alt="Google" width="30">
+  </a>
+        <p><a href="#">Forgotten password?</a></p>
+    </center>
+</body>
+</html>
