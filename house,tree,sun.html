@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scenery with House, River, Trees</title>
+  <style>
+    body {
+      margin: 0;
+      background: skyblue;
+    }
+
+    .ground {
+      position: relative;
+      background: #4CAF50;
+      height: 200px;
+      width: 100%;
+      top: 300px;
+    }
+
+    .sun {
+      width: 80px;
+      height: 80px;
+      background: yellow;
+      border-radius: 50%;
+      position: absolute;
+      top: 40px;
+      left: 80%;
+    }
+
+    .house {
+      width: 150px;
+      height: 150px;
+      background: #b5651d;
+      position: absolute;
+      top: 250px;
+      left: 100px;
+    }
+
+    .roof {
+      width: 0;
+      height: 0;
+      border-left: 75px solid transparent;
+      border-right: 75px solid transparent;
+      border-bottom: 75px solid darkred;
+      position: absolute;
+      top: 175px;
+      left: 100px;
+    }
+
+    .door {
+      width: 40px;
+      height: 70px;
+      background: #654321;
+      position: absolute;
+      top: 330px;
+      left: 135px;
+    }
+
+    .river {
+      position: absolute;
+      top: 400px;
+      width: 100%;
+      height: 100px;
+      background: #1E90FF;
+      border-top: 4px solid #0077be;
+    }
+
+    .tree {
+  position: absolute;
+  width: 60px;
+  height: 110px;
+}
+
+.tree .trunk {
+  width: 20px;
+  height: 50px;
+  background: #8B4513;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tree .leaves {
+  width: 60px;
+  height: 60px;
+  background: green;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+}
+
+
+.tree1 { top: 250px; left: 300px; }
+.tree2 { top: 260px; left: 400px; }
+.tree3 { top: 270px; left: 500px; }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="sun"></div>
+
+  <div class="roof"></div>
+  <div class="house"></div>
+  <div class="door"></div>
+
+  <div class="tree tree1">
+    <div class="trunk"></div>
+    <div class="leaves"></div>
+  </div>
+
+  <div class="tree tree2">
+    <div class="trunk"></div>
+    <div class="leaves"></div>
+  </div>
+
+  <div class="tree tree3">
+    <div class="trunk"></div>
+    <div class="leaves"></div>
+  </div>

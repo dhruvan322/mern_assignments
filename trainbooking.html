@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IRCTC Booking Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eee;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #004080;
+      color: white;
+      border: 2px solid #003366;
+      width: fit-content;
+    }
+
+    form {
+      background-color: white;
+      width: 400px;
+      margin: auto;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+<center>
+  <h2>IRCTC Train Booking</h2>
+
+  <form>
+    
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" required><br><br>
+
+    
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    
+    <label for="from">From Station:</label><br>
+    <input type="text" id="from" name="from" required><br><br>
+
+   
+    <label for="to">To Station:</label><br>
+    <input type="text" id="to" name="to" required><br><br>
+
+    
+    <label for="date">Date of Journey:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+
+    
+    <label for="class">Class:</label><br>
+    <select id="class" name="class">
+      <option value="sleeper">Sleeper</option>
+      <option value="third class">third class(AC)</option>
+      <option value="second class">second class(AC)</option>
+      <option value="first class">First Class(AC)</option>
+      <option value="chair">Chair</option>
+    </select><br><br>
+    <table>
+      <tr>
+        <td align ="center">
+          <input type="submit" value="book-train">
+        </td>
+       </tr>
+    </table>   
+
+</center>
+
+</body>
+</html>
